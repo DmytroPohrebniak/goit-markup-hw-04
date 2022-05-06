@@ -107,6 +107,7 @@
     display: flex;
     padding-top: 32px;
     padding-bottom: 32px;
+    align-items: center;
 
     color: var(--primary-text-color);
     font-weight: 500;
@@ -216,12 +217,11 @@
 }
 
 .features-icon-bg {
-    display: block;
+    display: flex;
     height: 120px;
     margin-bottom: 30px;
-    padding-top: 25px;
-    padding-bottom: 25px;
-    text-align: center;
+    justify-content: center;
+    align-items: center;
 
     background-color: #F5F4FA;
     border-radius: 4px;
@@ -291,7 +291,7 @@
 .team-list .item-name {
     display: block;
     padding-top: 30px;
-    padding-bottom: 16px;
+    padding-bottom: 30px;
 }
 .team-list .title {
     margin-top: 0;
@@ -306,7 +306,7 @@
 
 .team-list .profession {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 16px;
 
     font-size: 16px;
     line-height: 1.19;
@@ -315,11 +315,12 @@
 
 .social-links {
     display: flex;
-    padding-bottom: 30px;
     justify-content: center;
 }
 .social-links .link {
     display: flex;
+    align-items: center;
+    justify-content: center;
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -337,7 +338,6 @@
     width: 20px;
     height: 20px;
     fill: currentColor;
-    margin: auto;
 }
 
 /* Clients */
@@ -352,12 +352,11 @@
 }
 
 .client-link {
-    display: block;
+    display: flex;
     width: 170px;
-    padding-left: 32px;
-    padding-top: 16px;
-    padding-bottom: 16px;
-    padding-right: 32px;
+    height: 92px;
+    justify-content: center;
+    align-items: center;
 
     border: 1px solid #AFB1B8;
     border-radius: 4px;
@@ -390,6 +389,7 @@
 }
 .footer .container {
     display: flex;
+    align-items: baseline;
 }
 
 .footer-adress {
@@ -433,10 +433,6 @@
     color: var(--accent-color);
 }
 
-.social-footer {
-    padding-top: 12px;
-    padding-bottom: 40px;
-}
 .social-footer .title {
     margin-top: 0;
     margin-bottom: 20px;
@@ -454,6 +450,8 @@
 
 .link-footer .link {
     display: flex;
+    align-items: center;
+    justify-content: center;
     width: 44px;
     height: 44px;
     border-radius: 50%;
@@ -473,7 +471,6 @@
     width: 20px;
     height: 20px;
     fill: currentColor;
-    margin: auto;
 }
 /* Styles for portfolio.html */
 
@@ -535,6 +532,7 @@
 }
 
 .projects-link {
+    display: block;
     color: var(--primary-text-color);
     text-decoration: none;
 }
@@ -542,8 +540,8 @@
     display: block;
 }
 
-.projects .item:hover,
-.projects .item:focus {
+.projects-link:hover,
+.projects-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12),
     0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
